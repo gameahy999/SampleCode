@@ -41,4 +41,5 @@ int main()
  * Summary:
  *    1. waitpid(-1, NULL, 0) wait for any sub-process, it will return if one of
  *       them exit.
+ *    2. TODO: waitpid WNOHANG
  */

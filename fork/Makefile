@@ -1,7 +1,7 @@
 CC = gcc
 CXX = g++
 CFLAGS = -g
-PROG = tst
+PROG = tst multifork
 
 .PHONY = all clean
 
@@ -13,6 +13,9 @@ all : $(PROG)
 
 # TODO: add the .o files here
 tst : main.o
+	$(CXX) $(CFLAGS) $^ -o $@
+
+multifork: multi_fork.o
 	$(CXX) $(CFLAGS) $^ -o $@
 
 clean :
